@@ -275,7 +275,7 @@ public class Register extends Activity {
 
     public boolean isValidPhone(String phone) {
 
-        String ePattern = "^\\(?(\\d{11})\\)?$";
+        String ePattern = "^\\(?(\\d{10})\\)?$";
 
         Pattern pp = java.util.regex.Pattern.compile(ePattern);
         Matcher pm = pp.matcher(phone);
